@@ -1,0 +1,87 @@
+
+MeshLambertMaterial
+    color: <hex>,
+ *  opacity: <float>,
+ *  map: new THREE.Texture( <Image> ),
+ *  lightMap: new THREE.Texture( <Image> ),
+ *  lightMapIntensity: <float>
+ *  aoMap: new THREE.Texture( <Image> ),
+ *  aoMapIntensity: <float>
+ *  emissive: 高光颜色<hex>,
+ *  emissiveIntensity:高光强度 <float>
+ *  emissiveMap:高光贴图  new THREE.Texture( <Image> ),
+ *  specularMap:镜面贴图； new THREE.Texture( <Image> ),
+ *  alphaMap:透明贴图；new THREE.Texture( <Image> ),
+ *  envMap:环境贴图； new THREE.TextureCube( [posx, negx, posy, negy, posz, negz] ),
+ *  combine: 结合；THREE.Multiply,
+ *  reflectivity:反射率
+ *  refractionRatio:折射率
+ *  wireframe: <boolean>,
+ *  wireframeLinewidth: <float>,
+ *  skinning: <bool>, 
+ *  morphTargets: <bool>,
+ *  morphNormals: <bool>
+
+ MeshPhongMaterial = {
+ *  color: <hex>,
+ *  specular: <hex>, 高光颜色
+ *  shininess: <float>,光泽度
+ *  opacity: <float>,透明度
+ *  map: new THREE.Texture( <Image> ),
+ *  lightMap: new THREE.Texture( <Image> ),
+ *  lightMapIntensity: <float>
+ *  aoMap: new THREE.Texture( <Image> ),
+ *  aoMapIntensity: <float>
+ *  emissive: <hex>, 高光反射
+ *  emissiveIntensity: <float>
+ *  emissiveMap: new THREE.Texture( <Image> ),
+ *  bumpMap: new THREE.Texture( <Image> ),凹凸贴图
+ *  bumpScale: <float>,
+ *  normalMap: new THREE.Texture( <Image> ),
+ *  normalScale: <Vector2>,
+ *  displacementMap: new THREE.Texture( <Image> ), 置换贴图
+ *  displacementScale: <float>,
+ *  displacementBias: <float>,
+ *  specularMap: new THREE.Texture( <Image> ), 高光贴图
+ *  alphaMap: new THREE.Texture( <Image> ),
+ *  envMap: new THREE.TextureCube( [posx, negx, posy, negy, posz, negz] ),
+ *  combine: THREE.Multiply,
+ *  reflectivity: <float>,反射率
+ *  refractionRatio: <float>,折射率
+ *  wireframe: <boolean>,
+ *  wireframeLinewidth: <float>,
+ *  skinning: <bool>,
+ *  morphTargets: <bool>,
+ *  morphNormals: <bool>
+
+MeshStandardMaterial = {
+ *  color: <hex>,
+ *  roughness: <float>, 粗糙度
+ *  metalness: <float>, 金属性贴图
+ *  opacity: <float>,
+ *  map: new THREE.Texture( <Image> ),
+ *  lightMap: new THREE.Texture( <Image> ),
+ *  lightMapIntensity: <float>
+ *  aoMap: new THREE.Texture( <Image> ),
+ *  aoMapIntensity: <float>
+ *  emissive: <hex>,高光反射
+ *  emissiveIntensity: <float>
+ *  emissiveMap: new THREE.Texture( <Image> ),
+ *  bumpMap: new THREE.Texture( <Image> ),
+ *  bumpScale: <float>,
+ *  normalMap: new THREE.Texture( <Image> ),
+ *  normalScale: <Vector2>,
+ *  displacementMap: new THREE.Texture( <Image> ),
+ *  displacementScale: <float>,
+ *  displacementBias: <float>,
+ *  roughnessMap: new THREE.Texture( <Image> ),
+ *  metalnessMap: new THREE.Texture( <Image> ),
+ *  alphaMap: new THREE.Texture( <Image> ),
+ *  envMap: new THREE.CubeTexture( [posx, negx, posy, negy, posz, negz] ),
+ *  envMapIntensity: <float>
+ *  refractionRatio: <float>,折射率
+ *  wireframe: <boolean>,
+ *  wireframeLinewidth: <float>,
+ *  skinning: <bool>,
+ *  morphTargets: <bool>,
+ *  morphNormals: <bool>

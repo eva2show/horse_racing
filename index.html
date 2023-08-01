@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />  
+
+    <title>赛马</title>
+     
+  </head>
+  <body>
+
+    <script type="module" src="/main.js"></script>
+
+
+    <div id="mainView">
+
+
+    </div>
+
+<div class="tool">
+
+<button id="startGame">  开始 </button>
+<button id="stopGame"> 重置 </button>
+
+</div>
+
+<div id="loading"> 50%</div>
+
+<style>
+
+body,html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none; /* webkit浏览器 */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+user-select: none; /* 标准语法 */
+background: #222;
+}
+
+.tool{
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 200px;
+  margin: 8px auto;
+  display: flex;
+}
+
+
+.tool>button{
+  /* height: 60px; */
+  flex: 1;
+  padding: 8px 24px;
+  margin-right: 8px;
+}
+
+
+#mainView{
+  width: 1280px;
+  height: 720px;
+  margin: auto;
+}
+
+#loading{
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 100vh;
+}
+
+</style>
+
+  </body>
+</html>

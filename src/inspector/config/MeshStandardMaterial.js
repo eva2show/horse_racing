@@ -1,0 +1,184 @@
+
+import {default as config} from './number.config.js';
+
+export var MeshStandardMaterial = {
+    type:"MeshStandardMaterial",
+    ops:[
+        {
+            name:"info",
+            title:"info", 
+            type:"string",
+            des:"信息",
+            disabled:true
+        },
+        {
+            name:"name",
+            title:"name", 
+            type:"string",
+            des:"名称"
+        },
+        {
+            name:"color",
+            title:"color", 
+            type:"color",
+            des:"表面颜色"
+        },
+        {
+            name:"opacity", 
+            title:"opacity", 
+            type:"float", 
+            des:"透明度",
+            config:config.float1
+        },
+        {
+            name:"metalness", 
+            title:"metalness", 
+            type:"float", 
+            des:"金属性贴图" ,
+            config:config.float1
+
+        },
+
+        {
+            name:"roughness",
+            title:"roughness", 
+            type:"float", 
+            des:"粗糙度" ,
+            config:config.float1
+
+        },
+        {
+            name:"emissive", 
+            title:"emissive", 
+            type:"color",
+            des:"高光反射颜色"   
+        },
+        {
+            name:"emissiveIntensity", 
+            title:"emissiveIntensity", 
+            type:"float", 
+            des:"高光反射强度"   
+        },
+        {
+            name:"emissiveMap", 
+            title:"emissiveMap",
+            type:"texture", 
+            des:"高光反射贴图"   
+        },
+        {
+            name:"map", 
+            title:"map",
+            type:"texture",
+            des:"表面贴图"
+        },
+        {
+            name:"lightMap",
+            title:"lightMap",
+            type:"texture",
+            des:"灯光贴图"  
+        },
+        {
+            name:"lightMapIntensity",
+            title:"lightMapIntensity",
+            type:"float",
+            des:"灯光贴图强度"
+        },
+        {
+            name:"aoMap",
+            title:"aoMap",
+            type:"texture",
+            des:"AO贴图"
+        },
+        {
+            name:"aoMapIntensity",
+            title:"aoMapIntensity",
+            type:"float",
+            des:"AO贴图强度"
+        },
+        {
+            name:"bumpMap",
+            title:"bumpMap",
+            type:"texture",
+            des:"凹凸贴图"   
+        },
+        {
+            name:"bumpScale",
+            title:"bumpScale",
+            type:"float",
+            des:"凹凸缩放"   
+        },
+        {
+            name:"normalMap",
+            title:"normalMap",
+            type:"texture",
+            des:"法线贴图"   
+        },
+        {
+            name:"normalScale",
+            title:"normalScale",
+            type:"vector2",
+            des:"法线贴图缩放"   
+        },
+        {
+            name:"displacementMap",
+            title:"displacementMap",
+            type:"texture",
+            des:"置换贴图"   
+        },
+        {
+            name:"displacementScale",
+            title:"displacementScale",
+            type:"float",
+            des:"置换贴图缩放"   
+        },
+        {
+            name:"displacementBias",
+            title:"displacementBias",
+            type:"float",
+            des:"置换贴偏移"   
+        },
+        {
+            name:"alphaMap",
+            title:"alphaMap",
+            type:"texture",
+            des:"透明贴图"   
+        },
+        {
+            name:"envMap", 
+            title:"envMap", 
+            type:"texture",
+            des:"环境贴图"   
+        },
+        {
+            name:"envMapIntensity",
+            title:"envMapIntensity",
+            type:"float",
+            des:"环境贴图"   
+        },
+        // {
+        //     name:"refractionRatio",
+        //     title:"refractionRatio",
+        //     type:"float", 
+        //     des:"折射率"   
+        // },
+        {
+            name:"roughnessMap",
+            title:"roughnessMap",
+            type:"texture",
+            des:"粗糙度贴图"   
+        },
+        {
+            name:"metalnessMap",
+            title:"metalnessMap",
+            type:"texture",
+            des:"金属性贴图"   
+        },
+        {
+            name:"wireframe",
+            title:"wireframe",
+            type:"boolean", 
+            des:"线框"   
+        }
+
+    ]
+}

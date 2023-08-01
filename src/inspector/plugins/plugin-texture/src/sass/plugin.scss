@@ -1,0 +1,161 @@
+// Import core styles
+@import 'root/node_modules/@tweakpane/core/lib/sass/tp';
+
+:root {
+	--tp-plugin-image-dragging-color: hsla(230, 100%, 66%, 1.00);
+}
+
+.#{$prefix}-listv {
+	height: 200px;
+overflow-y: auto;
+	&_body {
+		padding:12px 0;
+	}
+
+	&_item {
+		width:50%;
+		float: left;
+		list-style:none;
+		margin: 0;
+		padding: 4px 0;
+		color: hsl(230, 7%, 75%);
+		border-radius: 2px;
+	}
+
+	&_select{
+		color:#fff;
+		background: #526fff;
+	}
+
+	&_icon {
+		border-radius: 6px;
+    padding: 1px;
+    background: #8c7000;
+		color:#fff;
+
+	}
+
+	&_context {
+
+		cursor: pointer;
+		padding: 0 2px;
+
+	}
+
+	&_title {
+		// color: #aaa;
+	}
+	
+}
+
+.#{$prefix}-imgv {
+	@extend %tp-input;
+	$imgh: 60px;
+	$imgt: 8px;
+
+	background: none;
+	cursor: default;
+	display: grid;
+	height: $imgh;
+	overflow: hidden;
+	position: relative;
+
+	&.#{$prefix}-v-disabled {
+		opacity: 0.5;
+	}
+
+	&_input {
+		width: $imgh;
+		pointer-events: none;
+
+		height: 100%;
+		opacity: 0;
+	}
+
+	&_image {
+		width: $imgh;
+		height: 100%;
+		position: absolute;
+		pointer-events: none;
+		border: 0;
+	}
+
+	&_info {
+		// left:66px;
+		width: 110px;
+		// height: calc(var(--bld-us) * 2);
+		position: absolute;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		// padding-top: $imgt;
+		bottom: $imgt - 2px;
+
+		line-height: 16px;
+		white-space: nowrap;
+	}
+
+	&_check {
+
+		// left: 86px;
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		top: $imgt + 1px;
+		border-radius: 2px;
+	}
+
+	&_bt {
+
+		width: 22px;
+		height: 22px;
+		top: $imgt;
+		position: absolute;
+		border: 0;
+		padding: 2px;
+		margin: 0;
+		border-radius: 2px;
+		fill: var(--cnt-fg);
+		background-color: var(--in-bg);
+
+		// left:66px;
+		svg {
+			width: 18px;
+			height: 18px;
+		}
+
+		opacity: 0.5;
+		cursor:pointer;
+	}
+
+	&_bt:hover {
+		opacity: 1;
+
+	}
+
+	&_image_contain {
+		object-fit: contain;
+	}
+
+	&_image_cover {
+		object-fit: cover;
+	}
+
+	&:hover {
+		background: none;
+	}
+
+	&_area_root:hover {
+		background: none;
+
+	}
+
+	// &_area_dragging {
+	// 	border: 2px dashed var(--tp-plugin-image-dragging-color);
+	//   border-radius: 6px;
+	// 	opacity: 0.6;
+	// }
+}
